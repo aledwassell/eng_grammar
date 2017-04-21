@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Aled's Grammar Class</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+  	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+
+
+  </head>
+  <body>
+
+    <div id=content>
+      <div id="white-board">
+        <!-- whiteboard -->
+
+        <div class="content ui-content" id="page">
+
+          <label for="selection">Select Relationship Type:</label>
+          <select name="selectRel" id="selectRel">
+            <option value="synonym">Synonyms</option>
+            <option value="antonym">Antonyms</option>
+            <option value="rhyme">Rhyme</option>
+          </select>
+          <label for="input">Type Your Word:</label>
+          <input type="text" name="input" value="" placeholder="synonyms..." id="input">
+
+          <div data-role="collapsibleset" data-content-theme="a" data-iconpos="right" class="target" id="set">
+            
+          </div>
+
+        </div>
+
+
+
+
+        <!-- whiteboard -->
+        <div id="eraser"></div>
+        <div id="red-pen"></div>
+        <div id="blue-pen"></div>
+      </div>
+    </div>
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

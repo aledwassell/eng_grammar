@@ -1,0 +1,130 @@
+@import 'https://fonts.googleapis.com/css?family=Slabo+27px'
+@import 'https://fonts.googleapis.com/css?family=Open+Sans'
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker)
+
+$wb-font-color: #1f75fe
+$wb-font: 'Slabo 27px', serif
+$color: #262626
+$bg: #2929a3
+
+$bg-color: #00b359
+$wb-color: #f2f2f2
+$wb-bdr-color: #adb2bd
+$wb-shadow: #404040
+$eraser: #2929a3
+$redpen: #FD7C6E
+$redpen-shadow: #fc604f
+$bluepen: #1f75fe
+$bluepen-shadow: #014ecb
+
+$button-bg: #2929a3
+
+// #main-text
+//   margin: 5px auto 5px auto
+//   font-family: $wb-font
+//   font-size: 1.2em
+//   color: $wb-font-color
+//   text-align: center
+
+// button
+//   background: $bg
+//   color: white
+//   border: none
+//   padding: 7px
+//   border-radius: 5px
+//   margin: 5px
+//   text-transform: uppercase
+//   cursor: pointer
+
+
+
+// input
+//   padding: 5px 10px
+//   border: none
+//   border-radius: 5px
+
+// button
+//   background: $button-bg
+//   color: white
+//   border: none
+//   padding: 7px
+//   border-radius: 5px
+//   margin: 5px
+//   text-transform: uppercase
+//   cursor: pointer
+
+#content
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  min-height: 100vh
+  color: $color
+  background-color: $bg-color
+  margin: 0
+  font-family: 'Open Sans', sans-serif
+  line-height: 27px
+
+#white-board
+  background-color: $wb-color
+  position: relative
+  width: 80%
+  min-height: 80vh
+  border-radius: 5px
+  border: 10px solid $wb-bdr-color
+  box-shadow: inset -1px 2px 2px $wb-shadow, 6px 9px 1px rgba(0, 0, 0, 0.1)
+  overflow: hidden
+
+#eraser
+  position: absolute
+  height: 20px
+  width: 100px
+  bottom: 0px
+  right: 100px
+  background-color: $eraser
+  border-radius: 5px 5px 0 0
+  border-bottom: 6px solid grey
+
+#red-pen
+  position: absolute
+  height: 5px
+  width: 80px
+  bottom: 0px
+  right: 250px
+  background-color: $redpen
+  border-bottom: 3px solid $redpen-shadow
+
+#blue-pen
+  position: absolute
+  height: 5px
+  width: 80px
+  bottom: 0px
+  right: 350px
+  background-color: $bluepen
+  border-bottom: 3px solid $bluepen-shadow
+
+
+// .grammar
+//   margin: 0 auto
+//   height: 80%
+//   width: 90%
+//   text-align: center
+//   padding: 15px
+//
+// ul
+//   margin: 0 auto
+//   list-style: none
+//   display: inline-block
+//   padding: 0
+//
+// ul li
+//   border-radius: 5px
+//   display: inline-block
+//   padding: 10px 20px
+//   cursor: pointer
+//   background-color: darken($wb-color, 5%)
+//   color: $wb-font-color
+//   transition: 0.3s
+//
+// ul li:hover
+//   background-color: rgba( $bg-color, 0.3)
