@@ -10,7 +10,6 @@
   	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
 
-
   </head>
   <body>
 
@@ -20,17 +19,22 @@
 
         <div class="content ui-content" id="page">
 
-          <label for="selection">Select Relationship Type:</label>
+          <div id="header"><h1>English Grammar Checker</h1></div>
+
+          <label for="selection">Select Type:</label>
+
           <select name="selectRel" id="selectRel">
             <option value="synonym">Synonyms</option>
             <option value="antonym">Antonyms</option>
             <option value="rhyme">Rhyme</option>
           </select>
+
           <label for="input">Type Your Word:</label>
+
           <input type="text" name="input" value="" placeholder="synonyms..." id="input">
 
           <div data-role="collapsibleset" data-content-theme="a" data-iconpos="right" class="target" id="set">
-            
+
           </div>
 
         </div>
