@@ -20,12 +20,7 @@ $bluepen-shadow: #014ecb
 $button-bg: #2929a3
 
 
-#header
-  font-family: $wb-font
-  color: $wb-font-color
-  font-size: 1.8em
-  text-align: center
-  line-height: 1.24
+
 
 
 // #main-text
@@ -63,6 +58,7 @@ $button-bg: #2929a3
 //   cursor: pointer
 
 #content
+  padding: 30px 0 40px 0
   display: flex
   justify-content: center
   align-items: center
@@ -70,19 +66,38 @@ $button-bg: #2929a3
   min-height: 100vh
   color: $color
   background-color: $bg-color
-  margin: 0
+  margin: 0.2
   font-family: 'Open Sans', sans-serif
   line-height: 27px
+  @media (max-width: 768px)
+    padding: 10px 0 20px 0
+
+#header
+  font-family: $wb-font
+  color: $wb-font-color
+  font-size: 1.8em
+  text-align: center
+  line-height: 1.24
+  @media (max-width: 768px)
+    font-size: 1.5em
+    line-height: normal
 
 #white-board
   background-color: $wb-color
   position: relative
+  padding-bottom: 10px
   width: 80%
   min-height: 80vh
   border-radius: 5px
   border: 10px solid $wb-bdr-color
   box-shadow: inset -1px 2px 2px $wb-shadow, 6px 9px 1px rgba(0, 0, 0, 0.1)
   overflow: hidden
+  @media (max-width: 768px)
+    width: 100%
+    min-height: 90vh
+    border-left: 0
+    border-right: 0
+    border-radius: 0
 
 #eraser
   position: absolute
