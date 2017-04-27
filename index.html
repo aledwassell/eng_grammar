@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <link rel="stylesheet" href="css/main.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rita/1.1.51/rita.min.js" charset="utf-8"></script>
   	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
 
@@ -18,32 +18,31 @@
 
       <div id="white-board">
         <!-- whiteboard -->
-        <div id="header"><h1>English Grammar Checker</h1></div>
-        <!-- <div data-role="header" class="">
-          <nav>
-            <ul>
 
-            </ul>
-          </nav>
-        </div> -->
-        <div class="content ui-content" id="page">
+        <div class="content ui-content" id="home" data-role="page">
 
+          <div id="header"><h1>English Grammar Checker</h1></div>
 
+          <div data-role="controlgroup" data-type="horizontal">
+            <!-- <button class="ui-btn"><a href="index.html">Relationship Types</a></button> -->
+            <button class="ui-btn"><a href="plurals.html">Plurals</a></button>
+            <!-- <button class="ui-btn">Button C</button> -->
+          </div>
 
+          <!-- releationship type selection -->
           <label for="selection">Select Type:</label>
-
           <select name="selectRel" id="selectRel">
             <option value="synonym">Synonyms</option>
-            <option value="antonym">Antonyms</option>
+            <!-- <option value="antonym">Antonyms</option> -->
             <option value="rhyme">Rhyme</option>
           </select>
 
+          <!-- input for search -->
           <label for="input">Type Your Word:</label>
-
           <input type="text" name="input" value="" placeholder="synonyms..." id="input">
 
           <div data-role="collapsibleset" data-content-theme="a" data-iconpos="right" class="target" id="set">
-
+            <!-- Here is appended the items for the list -->
           </div>
 
         </div>

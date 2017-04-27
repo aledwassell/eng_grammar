@@ -1,12 +1,11 @@
 var input;
 var button;
 var output;
-var target = document.getElementById('sketch-holder');
 
 button.onClick(setup());
 
 function setup() {
-  input = createInput('');
+  input = $('#input').val();
   button = createButton('pluralize me');
   input.parent(target);
   button.parent(target);
